@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Citizen Participation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+    <script defer src="scripts.js"></script>
+</head>
+
+<body class="auth-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Citizen Participation</a></div>
+            <ul class="navigation-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Register</h1>
+            <p>Join the platform and start participating in public governance today!</p>
+
+            <form id="registrationForm" action="register.php" method="POST">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+                </div>
+
+                <!-- Role Selection -->
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="citizen">Citizen</option>
+                        <option value="official">Government Official</option>
+                        <option value="admin">Moderator</option>
+                    </select>
+                </div>
+
+                <!-- Terms and Conditions Checkbox -->
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <p class="auth-footer">
+                Already have an account? <a href="login.html">Login here</a> <br>
+                or <a href="index.html">Return to Home</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Citizen Participation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

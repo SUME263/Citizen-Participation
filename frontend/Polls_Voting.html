@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls and Voting | Citizen Participation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polls.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Citizen Participation</a></div>
+            <ul class="navigation-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="poll-section">
+            <h1>Polls and Voting</h1>
+            <p>Participate in public governance by casting your vote on pressing issues.</p>
+
+            <h2>Vote on Public Issues</h2>
+            <form action="#" method="POST" class="poll-form">
+                <div class="form-group">
+                    <label for="pollTitle">Poll Title:</label>
+                    <input type="text" id="pollTitle" name="pollTitle" value="Example Poll Title" disabled>
+                </div>
+
+                <div class="form-group">
+                    <p>Select an option:</p>
+                    <div class="poll-options">
+                        <input type="radio" id="option1" name="pollOption" value="Option 1">
+                        <label for="option1">Option 1</label><br>
+                        <input type="radio" id="option2" name="pollOption" value="Option 2">
+                        <label for="option2">Option 2</label><br>
+                        <input type="radio" id="option3" name="pollOption" value="Option 3">
+                        <label for="option3">Option 3</label><br>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Submit Vote</button>
+            </form>
+        </section>
+
+        <section class="history-section">
+            <h2>Voting History</h2>
+            <p>Review the polls you’ve participated in and your choices.</p>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Poll Title</th>
+                        <th>Your Vote</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example of past votes -->
+                    <tr>
+                        <td>Example Poll Title</td>
+                        <td>Option 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <p class="back-link"><a href="index.html">Return to Home Page</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Citizen Participation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project/Initiative Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body id="project-tracking">
+    <header>
+        <h1>Project/Initiative Tracking</h1>
+    </header>
+
+    <section>
+        <h2>Ongoing and Upcoming Projects</h2>
+        <p>Explore ongoing and upcoming initiatives. Click on any project to view more details or provide feedback.</p>
+
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Community Park Renovation</td>
+                    <td>Revamping the local park with new facilities and landscaping.</td>
+                    <td>In Progress</td>
+                    <td>
+                        <a href="#" class="view-details">View Details</a> | 
+                        <a href="#" class="leave-feedback">Leave Feedback</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>New Public Library</td>
+                    <td>Building a modern library with digital resources.</td>
+                    <td>Planned</td>
+                    <td>
+                        <a href="#" class="view-details">View Details</a> | 
+                        <a href="#" class="leave-feedback">Leave Feedback</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Submit a New Proposal</h2>
+        <form action="#" method="POST" id="proposal-form">
+            <div class="form-group">
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" id="projectTitle" name="projectTitle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectDescription">Description:</label>
+                <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="projectBudget">Estimated Budget:</label>
+                <input type="number" id="projectBudget" name="projectBudget" required>
+            </div>
+
+            <button type="submit">Submit Proposal</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Citizen Participation Platform. <a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

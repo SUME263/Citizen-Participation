@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Suggestions | Citizen Participation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Citizen Participation</a></div>
+            <ul class="navigation-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Feedback and Suggestion Submission</h1>
+            <p>We value your input! Submit your ideas or feedback to help shape better governance.</p>
+            <form id="feedbackForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="suggestionTitle">Title:</label>
+                    <input type="text" id="suggestionTitle" name="suggestionTitle" placeholder="Enter a brief title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestionDetails">Details:</label>
+                    <textarea id="suggestionDetails" name="suggestionDetails" placeholder="Provide detailed feedback or suggestions" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="vote">Rate This Suggestion:</label>
+                    <select id="vote" name="vote">
+                        <option value="upvote">Upvote</option>
+                        <option value="downvote">Downvote</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" placeholder="Add any additional comments (optional)" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Suggestion</button>
+            </form>
+            <p class="form-footer">
+                <a href="index.html">Back to Home</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Citizen Participation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

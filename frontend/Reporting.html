@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Issue Reporting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reporting.css">
+</head>
+
+<body id="reporting-style">
+    <header>
+        <h1>Public Issue Reporting</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Report a New Issue</h2>
+            <form action="#" method="POST" id="issueReportForm">
+                <div class="form-group">
+                    <label for="issueTitle">Issue Title:</label>
+                    <input type="text" id="issueTitle" name="issueTitle" placeholder="Brief title of the issue" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueDescription">Description:</label>
+                    <textarea id="issueDescription" name="issueDescription" rows="5" placeholder="Provide detailed information about the issue" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueType">Type of Issue:</label>
+                    <select id="issueType" name="issueType" required>
+                        <option value="" disabled selected>Select issue type</option>
+                        <option value="infrastructure">Infrastructure</option>
+                        <option value="noise">Noise</option>
+                        <option value="community">Community</option>
+                        <option value="environment">Environmental</option>
+                        <option value="safety">Safety</option>
+                    </select>
+                </div>
+
+                <button type="submit">Report Issue</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your Reported Issues</h2>
+            <p>Track the progress of issues you have reported.</p>
+            <table class="reported-issues-table">
+                <thead>
+                    <tr>
+                        <th>Issue Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Tracking Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Example Issue</td>
+                        <td>Broken streetlight on Main Street.</td>
+                        <td>Under Review</td>
+                        <td>#12345</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Return to <a href="index.html">Home</a> page here.</p>
+        
+        <p><p>&copy; 2024 Citizen Participation. All rights reserved.</p></p>
+    </footer>
+</body>
+</html>

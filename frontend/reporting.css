@@ -1,0 +1,225 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Reporting Container */
+.reporting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Reporting Header */
+.reporting-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reporting-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.reporting-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Report Filters Section */
+.report-filters {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.report-filters h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.report-filters label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 1rem;
+}
+
+.report-filters select,
+.report-filters input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    width: 45%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.report-filters button {
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.report-filters button:hover {
+    background-color: #0033a3;
+}
+
+/* Report Content Section */
+.report-content {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.report-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Table Styling for Reports */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.report-table th,
+.report-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.report-table th {
+    background-color: #0044cc;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.report-table td {
+    font-size: 1rem;
+    color: #555;
+}
+
+.report-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Chart Section */
+.report-chart {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 2rem;
+}
+
+.report-chart canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* No Data Section */
+.no-data {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 2rem;
+}
+
+/* Export Buttons Section */
+.export-buttons {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.export-buttons button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+}
+
+.export-buttons button:hover {
+    background-color: #218838;
+}
+
+.export-buttons .export-csv {
+    background-color: #ffc107;
+}
+
+.export-buttons .export-csv:hover {
+    background-color: #e0a800;
+}
+
+.export-buttons .export-pdf {
+    background-color: #dc3545;
+}
+
+.export-buttons .export-pdf:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .reporting-container {
+        padding: 1.5rem;
+    }
+
+    .report-filters label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .report-filters select,
+    .report-filters input {
+        width: 100%;
+    }
+
+    .export-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .export-buttons button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .report-table th,
+    .report-table td {
+        padding: 0.8rem;
+    }
+
+    .report-table {
+        font-size: 0.9rem;
+    }
+}

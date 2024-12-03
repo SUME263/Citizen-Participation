@@ -1,0 +1,147 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Notifications Container */
+.notifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Notifications Header */
+.notifications-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.notifications-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.notifications-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Notification Box */
+.notification {
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Notification Types */
+.notification-info {
+    background-color: #17a2b8;
+}
+
+.notification-success {
+    background-color: #28a745;
+}
+
+.notification-warning {
+    background-color: #ffc107;
+}
+
+.notification-error {
+    background-color: #dc3545;
+}
+
+/* Notification Icon */
+.notification .icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* Notification Message */
+.notification .message {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Close Button */
+.notification .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.notification .close-btn:hover {
+    color: #ccc;
+}
+
+/* Notifications List */
+.notifications-list {
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* New Notification Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Notification Appears with Slide-in */
+.notification {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Notification Container Responsive Design */
+@media (max-width: 768px) {
+    .notifications-container {
+        padding: 1.5rem;
+    }
+
+    .notifications-header h1 {
+        font-size: 2rem;
+    }
+
+    .notifications-header p {
+        font-size: 1rem;
+    }
+
+    .notification {
+        padding: 1rem;
+    }
+
+    .notification .icon {
+        font-size: 1.3rem;
+    }
+
+    .notification .message {
+        font-size: 0.9rem;
+    }
+
+    .notification .close-btn {
+        font-size: 1.3rem;
+    }
+}

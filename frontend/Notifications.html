@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications and Alerts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body id="notifications-css">
+    <header>
+        <h1>Notifications and Alerts</h1>
+    </header>
+
+    <main>
+        <!-- Subscription Section -->
+        <section>
+            <h2>Subscribe for Alerts</h2>
+            <p>Stay informed! Subscribe to get alerts on new policies, town hall meetings, and emergencies.</p>
+            <form action="#" method="POST" id="subscriptionForm">
+                <div class="form-group">
+                    <label for="alertType">Alert Type:</label>
+                    <select id="alertType" name="alertType" required>
+                        <option value="" disabled selected>Select alert type</option>
+                        <option value="policies">New Policies</option>
+                        <option value="townHall">Town Hall Meetings</option>
+                        <option value="emergency">Emergency Alerts</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- User Subscriptions Section -->
+        <section>
+            <h2>Your Subscriptions</h2>
+            <p>Here are the alert categories you've subscribed to:</p>
+            <ul class="subscription-list">
+                <li>New Policies</li>
+                <li>Emergency Alerts</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Return to <a href="index.html">Home</a> page here.</p>
+        <p><p>&copy; 2024 Citizen Participation. All rights reserved.</p></p>
+    </footer>
+</body>
+</html>
+

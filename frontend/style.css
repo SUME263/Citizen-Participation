@@ -1,0 +1,341 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+header {
+    color: #fff;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #081e35;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo:hover {
+    color: #ffcc00;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    /* display: inline-flex; */
+    /* width: 100%; */
+}
+
+.navbar .menu a:hover {
+    color: #ffcc00;
+}
+
+.navigation-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.navgitation-links li {
+    display: inline;
+}
+
+.navgitation-links a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navgitation-links a:hover {
+    color: #ffcc00;
+}
+
+/* Navbar Mobile Hamburger */
+.navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    /* font-size: 2rem; */
+    cursor: pointer;
+    gap: 5px;
+    /* color: white; */
+}
+
+.navbar .hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Navbar Links for Mobile */
+.navbar .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #3271af;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .mobile-menu a {
+    /* display: block; */
+    color: white;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.navbar .mobile-menu a:hover {
+    color: #ffcc00;
+}
+
+section{
+    /* background-color: orangered; */
+    padding: 10px;
+    margin: 50px;
+    background: linen;
+    border-radius: 10px;
+    /* border-style: groove; */
+}
+
+/* Navbar Responsive Design */
+@media (max-width: 768px) {
+    /* Hide the menu and show hamburger on mobile */
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    /* Mobile menu visible when hamburger is clicked */
+    .navbar.active .mobile-menu {
+        display: block;
+    }
+
+    /* Change font size and layout for smaller screens */
+    .navbar .logo {
+        font-size: 1.6rem;
+    }
+
+    .navbar .menu a {
+        font-size: 1rem;
+    }
+
+    .navbar .mobile-menu a {
+        font-size: 1.2rem;
+    }
+}
+
+a {
+    color: #0044cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Forms */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+    /* Hide desktop menu, show hamburger */
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+    }
+
+    /* Display mobile menu when active */
+    .navbar.active .mobile-menu {
+        display: flex;
+    }
+
+    .navbar .mobile-menu a {
+        text-align: center;
+    }
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
